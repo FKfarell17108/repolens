@@ -1,81 +1,87 @@
+<div align="center">
+
+```
 ██████╗ ███████╗██████╗  ██████╗ ██╗     ███████╗███╗   ██╗███████╗
 ██╔══██╗██╔════╝██╔══██╗██╔═══██╗██║     ██╔════╝████╗  ██║██╔════╝
 ██████╔╝█████╗  ██████╔╝██║   ██║██║     █████╗  ██╔██╗ ██║███████╗
 ██╔══██╗██╔══╝  ██╔═══╝ ██║   ██║██║     ██╔══╝  ██║╚██╗██║╚════██║
 ██║  ██║███████╗██║     ╚██████╔╝███████╗███████╗██║ ╚████║███████║
 ╚═╝  ╚═╝╚══════╝╚═╝      ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═══╝╚══════╝
+```
 
-# RepoLens
+**Repository Code Analysis Tool**
 
-> **Repository Code Analysis Tool**: Membantu developer memahami struktur codebase dengan cepat, tanpa harus membaca semua file secara manual.
+*Helps developers understand codebase structure quickly, without reading every file manually.*
+
+</div>
 
 ---
 
-## Cara Menjalankan
+## Prerequisites
+[.NET 8 SDK](https://dotnet.microsoft.com/download) or later
 
-### Prasyarat
-- [.NET 8 SDK](https://dotnet.microsoft.com/download) atau lebih baru
-
-### Clone & Build
+## Clone & Build
 ```bash
-git clone <your-repo-url>
-cd RepoLens
+git clone https://github.com/FKfarell17108/repolens.git
+cd repolens
 dotnet build
 ```
 
-### Jalankan Analisis
+### Run Analysis
 ```bash
-# Analisis repository manapun
+# Analyze any repository
 dotnet run -- /path/to/your/project
 
-# Simpan hasil ke file
+# Save output to a file
 dotnet run -- /path/to/project --output report.txt
 
-# Tampilkan log detail
+# Show detailed scan logs
 dotnet run -- /path/to/project --verbose
 
-# Lewati deteksi routes/components (lebih cepat)
+# Skip route/component detection (faster)
 dotnet run -- /path/to/project --no-components
 ```
 
 ---
 
-## 🏗️ Struktur Project
+## Project Structure
 
 ```
 RepoLens/
 ├── Models/
-│   └── RepoInfo.cs              # Model data repository (RepoInfo, TechStack, CodeComponents)
+│   └── RepoInfo.cs
 ├── Services/
-│   ├── RepoScannerService.cs    # Recursive scanning seluruh file & folder
-│   ├── TechStackService.cs      # Deteksi bahasa, framework, dan tools
-│   ├── ComponentDetectorService.cs  # Deteksi routes, API endpoints, UI components
-│   └── ExplanationService.cs    # Generate laporan teks terstruktur
-├── Program.cs                   # Entry point & CLI argument parsing
-├── RepoLens.csproj              # Project configuration
+│   ├── RepoScannerService.cs
+│   ├── TechStackService.cs
+│   ├── ComponentDetectorService.cs
+│   └── ExplanationService.cs
+├── Program.cs
+├── RepoLens.csproj
 └── README.md
 ```
 
 ---
 
-## ✨ Fitur
+## Features
 
-| Fitur | Status |
-|-------|--------|
+| Feature | Status |
+|---|---|
 | Recursive folder scanning | ✅ |
-| Deteksi 20+ bahasa pemrograman | ✅ |
-| Deteksi framework (React, Next.js, Vue, Django, FastAPI, dll) | ✅ |
-| Deteksi tools (Docker, GitHub Actions, npm, Yarn, dll) | ✅ |
-| Deteksi arsitektur (Monolith, Microservices, Monorepo) | ✅ |
-| Deteksi routes (Next.js, Express) | ✅ |
-| Deteksi API endpoints | ✅ |
-| Deteksi UI components (React, Vue) | ✅ |
-| Deskripsi otomatis setiap folder | ✅ |
-| Export laporan ke file .txt | ✅ |
-| Skip folder irrelevant (node_modules, .git, dll) | ✅ |
+| Detects 20+ programming languages | ✅ |
+| Detects frameworks (React, Next.js, Vue, Django, FastAPI, etc.) | ✅ |
+| Detects tools (Docker, GitHub Actions, npm, Yarn, etc.) | ✅ |
+| Architecture detection (Monolith, Microservices, Monorepo) | ✅ |
+| Route detection (Next.js, Express) | ✅ |
+| API endpoint detection | ✅ |
+| UI component detection (React, Vue) | ✅ |
+| Automatic folder descriptions | ✅ |
+| Export report to `.txt` file | ✅ |
+| Skips irrelevant folders (node_modules, .git, etc.) | ✅ |
 
 ---
 
-## 📝 Lisensi
 
-MIT License — bebas digunakan dan dimodifikasi.
+## © 2026 Farell Kurniawan
+
+Copyright © 2026 Farell Kurniawan. All rights reserved.  
+Distribution and use of this code is permitted under the terms of the **MIT** license.
