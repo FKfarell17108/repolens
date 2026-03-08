@@ -9,7 +9,7 @@
 ╚═╝  ╚═╝╚══════╝╚═╝      ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═══╝╚══════╝
 ```
 
-**Repository Code Analysis Tool | v1.0.0**
+**Repository Code Analysis Tool   |   v1.0.0 BETA**
 
 *Helps developers understand codebase structure quickly, without reading every file manually.*
 
