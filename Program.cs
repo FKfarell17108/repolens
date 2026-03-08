@@ -105,9 +105,9 @@ class Program
         Console.WriteLine("  ╚═╝  ╚═╝╚══════╝╚═╝      ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═══╝╚══════╝");
         Console.ResetColor();
         Console.ForegroundColor = ConsoleColor.DarkGray;
-        Console.WriteLine("  Repository Code Analysis Tool  |  v1.0.0");
+        Console.WriteLine("  Repository Code Analysis Tool  |  v1.0.0 BETA");
         Console.WriteLine("  Membantu developer memahami codebase dengan cepat");
-        Console.WriteLine("  Dibuat oleh Farell Kurniawan");
+        Console.WriteLine("  StorSync Technology  |  Farell Kurniawan ");
         Console.ResetColor();
         Console.WriteLine();
     }
